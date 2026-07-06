@@ -13,7 +13,6 @@ winapi = { version = "0.3", features = [
     "memoryapi",
     "processthreadsapi",
     "synchapi",
-    "winnt",
-    "shlobj"
+    "winnt"
 ] }
 encoding_rs = "0.8"
