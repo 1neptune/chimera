@@ -1,0 +1,19 @@
+[package]
+name = "zloader"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking"] }
+winapi = { version = "0.3", features = [
+    "winbase",
+    "memoryapi",
+    "processthreadsapi",
+    "synchapi",
+    "winnt",
+    "shlobj"
+] }
+encoding_rs = "0.8"
